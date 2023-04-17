@@ -1,5 +1,7 @@
+import { Route, Routes } from 'react-router-dom';
 
 import Directory from '../../components/directory/directory.component'
+import Category from '../category/category.component';
 
 const Home = () => {
 
@@ -32,7 +34,11 @@ const Home = () => {
   ]
 
   return (
-    <Directory categories={categories}/>
+    //<Directory categories={categories}/>
+    <Routes>
+        <Route index element={<Directory categories={categories}/>}/>
+        <Route path= ":category" element={<Category/>} />
+    </Routes>
   );
 }
 
