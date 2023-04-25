@@ -98,10 +98,10 @@ export const CartProvider = ({children}) => {
    
     const updateCartItemsReducer= (newCartItems) => {
        
-        console.log(cartItems);
+        //console.log(cartItems);
         const newCartCount = newCartItems.reduce((acumelator, currentValue) => acumelator + currentValue.quantity, 0)
         const newCartTotal = newCartItems.reduce((total, item) => total +(item.quantity * item.price),0)
-        console.log(newCartCount);
+        //console.log(newCartCount);
         dispatcher(createAction(CART_ACTION_TYPES.SET_CART_ITEMS,{
                 cartItems: newCartItems,
                 cartCount: newCartCount,

@@ -58,7 +58,7 @@ import {
    });
 
    await batch.commit();
-   console.log("Done");
+   //console.log("Done");
  };
 
  export const getCategoriesAndDocuments= async() => {
@@ -79,11 +79,11 @@ import {
    additionalInformation = {}
    ) => {
    const userDocRef = doc(db, 'users', userAuth.uid);
-   console.log(userDocRef);
+   //console.log(userDocRef);
 
    const userSnapshot = await getDoc(userDocRef);
-   console.log(userSnapshot);
-   console.log(userSnapshot.exists());
+   //console.log(userSnapshot);
+   //console.log(userSnapshot.exists());
 
    if(!userSnapshot.exists()){
       const {displayName, email} = userAuth;
@@ -97,7 +97,7 @@ import {
             ...additionalInformation,
          });
       } catch (error){
-         console.log('error creating the user', error.message);
+         //console.log('error creating the user', error.message);
       }
    }
 
