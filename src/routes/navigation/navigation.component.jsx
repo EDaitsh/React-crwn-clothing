@@ -20,7 +20,7 @@ import {NavLink} from './navigation.styles'
 
 const Navigation =() => {
     const currentUser = useSelector(selectCurrentUser);
-    console.log('current user: ' + currentUser);
+    //console.log('current user: ' + currentUser);
     const {isCartOpen} = useContext(CartContext);
 
     return (
