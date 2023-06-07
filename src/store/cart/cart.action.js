@@ -32,6 +32,8 @@ const clearCartItem = (cartItems, cartItemToRemve) => cartItems.filter(cartItem 
 export const setIsCartOpen= (boolean) => 
     createAction(CART_ACTION_TYPES.SET_IS_CART_OPEN, boolean);
 
+export const initCartItems = () => 
+    createAction(CART_ACTION_TYPES.INIT_CART_ITEMS);
 
 export const addItemToCart = (cartItems, productToAdd) => {
         const newCartItems = addCartItem(cartItems,productToAdd);
