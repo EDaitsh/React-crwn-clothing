@@ -40,7 +40,7 @@ export const Input = styled.input`
 
   &:focus ~  ${FormInputLable}{
     ${shrinkLabelStyles};
-  }
+  };
 `
 
 export const Group = styled.div`
