@@ -58,6 +58,10 @@ export const DirectoryItemContainer = styled.div`
       opacity: 0.9;
     }
   }
+
+  @media screen and (max-width: 800){
+    height: 200px;
+  }
   
   &.large {
     height: 380px;
